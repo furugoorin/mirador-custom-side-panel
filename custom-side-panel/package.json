@@ -23,6 +23,7 @@
     "react": "16.x"
   },
   "devDependencies": {
+    "mirador": "^3.3.0",
     "nwb": "0.25.x",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
