@@ -1,15 +1,22 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import Mirador from 'mirador';
+import CustomSidePanel from '../../src/components/CustomSidePanel'
 
-import Example from '../../src'
-
-export default class Demo extends Component {
-  render() {
-    return <div>
-      <h1>custom-side-panel Demo</h1>
-      <Example/>
-    </div>
+const config = { 
+  id: 'demo', 
+  window: {
+    defaultView: 'single',
+    sideBarOpenByDefault: true,
+  },
+  windows: [
+    {
+      loadedManifest: 'https://purl.stanford.edu/sn904cj3429/iiif/manifest'
+    }
+  ], 
+  translations: { 
+    en: { 
+      openCompanionWindow_CustomKey1: 'This is a moo'
+    }
   }
-}
+};
 
-render(<Demo/>, document.querySelector('#demo'))
+Mirador.viewer(config, CustomSidePanel);
