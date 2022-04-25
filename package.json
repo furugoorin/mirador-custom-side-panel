@@ -1,22 +1,42 @@
 {
-  "name": "mirador-custom-side-panel",
+  "name": "custom-side-panel",
   "version": "1.0.0",
-  "description": "Note: README taken from [this repository](https://github.com/jabrah/mirador-side-panel-plugin-test)",
-  "main": "index.js",
+  "description": "custom-side-panel React component",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "prepublishOnly": "npm run build",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/furugoorin/mirador-custom-side-panel.git"
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "mirador": "^3.3.0",
+    "nwb": "0.25.x",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/furugoorin/mirador-custom-side-panel/issues"
-  },
-  "homepage": "https://github.com/furugoorin/mirador-custom-side-panel#readme",
-  "devDependencies": {
-    "nwb": "^0.25.2"
+  "homepage": "",
+  "license": "MIT",
+  "repository": "",
+  "keywords": [
+    "react-component"
+  ],
+  "dependencies": {
+    "@blueprintjs/core": "^4.2.0",
+    "@blueprintjs/icons": "^4.2.3"
   }
 }
