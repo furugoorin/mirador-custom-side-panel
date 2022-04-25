@@ -14,13 +14,14 @@ export default function CustomSidePanel(props) {
         <><CustomButton
             target='WindowSideBarButtons'
             mode='add'
+            component={CustomButton}
           >
         </CustomButton>
         <CompanionWindow
             title="Custom SidePanel Plugin A"
             windowId={windowId}
             id={id}
-            companionWindowKey="CustomKey1"
+            companionWindowKey="CustomKey1" 
         >
           <h1>This is a moo</h1>
         </CompanionWindow></>

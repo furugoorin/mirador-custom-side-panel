@@ -2,7 +2,7 @@ import expect from 'expect'
 import React from 'react'
 import {render, unmountComponentAtNode} from 'react-dom'
 
-import Component from 'src/'
+import Component from '../src/components/side-panel-a/panel/component'
 
 describe('Component', () => {
   let node
