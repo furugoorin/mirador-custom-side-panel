@@ -30,4 +30,3 @@ CustomSidePanel.propTypes = {
 CustomSidePanel.defaultProps = {
     title: 'Unnamed Panel Title',
 };
-

@@ -1,5 +1,5 @@
 import Mirador from 'mirador';
-import CustomSidePanel from '../../src/components/index'
+import CustomSidePanel from '../../src/components/index';
 
 const config = { 
   id: 'demo', 
