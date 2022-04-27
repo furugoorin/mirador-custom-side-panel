@@ -7,8 +7,8 @@ export default function CustomSidePanel(props) {
     return (
         <CompanionWindow
             title="Custom SidePanel Plugin A"
-            windowId={windowId}
-            id={id}
+            windowId={ windowId }
+            id={ id }
         >
             <h1>This is a work in progress</h1>
             <p>°˖✧◝(⁰▿⁰)◜✧˖°</p>

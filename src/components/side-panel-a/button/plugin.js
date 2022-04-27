@@ -8,5 +8,5 @@ CustomButton.value = 'CustomKey1';
 export default {
   target: 'WindowSideBarButtons',
   mode: 'add',
-  component: CustomButton
+  component: CustomButton,
 };

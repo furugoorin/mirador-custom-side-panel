@@ -16,7 +16,7 @@ const config = {
     en: { 
       openCompanionWindow_CustomKey1: 'This is a moo'
     }
-  }
+  },
 };
 
 Mirador.viewer(config, CustomSidePanel);
